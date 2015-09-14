@@ -7,8 +7,10 @@
 
 import scrapy
 
+# The list of the fields to export from each Article
+# This is used in ChemSpider
+class ArticleItem(scrapy.Item):
+    title = scrapy.Field()
+    authors = scrapy.Field()
+    number_of_citings = scrapy.Field()
 
-class ChemSpiderItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
